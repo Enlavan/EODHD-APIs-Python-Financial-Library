@@ -18,7 +18,6 @@ from .ListOfExchangesAPI import ListOfExchangesAPI
 from .TradingHours_StockMarketHolidays_SymbolsChangeHistory import TradingHours_StockMarketHolidays_SymbolsChangeHistoryAPI
 from .StockMarketScreenerAPI import StockMarketScreenerAPI
 from .FinancialNewsAPI import FinancialNewsAPI
-from .OptionsDataAPI import OptionsDataAPI
 from .IntradayDataAPI import IntradayDataAPI
 from .EodHistoricalStockMarketDataAPI import EodHistoricalStockMarketDataAPI
 from .StockMarketTickDataAPI import StockMarketTickDataAPI
