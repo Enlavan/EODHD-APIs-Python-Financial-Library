@@ -2,6 +2,7 @@ from .HistoricalDividendsAPI import HistoricalDividendsAPI
 from .HistoricalSplitsAPI import HistoricalSplitsAPI
 from .TechnicalIndicatorAPI import TechnicalIndicatorAPI
 from .LiveStockPricesAPI import LiveStockPricesAPI
+from .LiveExtendedQuotesAPI import LiveExtendedQuotesAPI
 from .EconomicEventsDataAPI import EconomicEventsDataAPI
 from .InsiderTransactionsAPI import InsiderTransactionsAPI
 from .FundamentalDataAPI import FundamentalDataAPI
