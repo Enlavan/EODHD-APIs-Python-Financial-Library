@@ -9,6 +9,7 @@ from .BulkEodSplitsDividendsAPI import BulkEodSplitsDividendsDataAPI
 from .UpcomingEarningsAPI import UpcomgingEarningsAPI
 from .EarningTrendsAPI import EarningTrendsAPI
 from .UpcomingIPOsAPI import UpcomingIPOsAPI
+from .UpcomingDividendsAPI import UpcomingDividendsAPI
 from .UpcomingSplitsAPI import UpcomingSplitsAPI
 from .MacroIndicatorsAPI import MacroIndicatorsAPI
 from .BondsFundamentalsAPI import BondsFundamentalsAPI
