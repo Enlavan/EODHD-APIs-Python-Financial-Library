@@ -1,6 +1,8 @@
+#APIs/HistoricalMarketCapitalizationAPI.py
+
 from .BaseAPI import BaseAPI
 
-class HistoricalMarketCapitalization(BaseAPI):
+class HistoricalMarketCapitalizationAPI(BaseAPI):
 
     def get_historical_market_capitalization_data(self, api_token: str, ticker, from_date: str = None, to_date: str = None):
         

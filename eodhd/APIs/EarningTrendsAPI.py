@@ -1,3 +1,5 @@
+#APIs/EarningTrendsAPI.py
+
 from .BaseAPI import BaseAPI
 
 class EarningTrendsAPI(BaseAPI):
