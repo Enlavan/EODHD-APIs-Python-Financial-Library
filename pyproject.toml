@@ -1,0 +1,79 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eodhd"
+version = "2.0.0"
+description = "Official EODHD API Python Library"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Michael Whittle", email = "michael@lifecycle-ps.com" },
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+dependencies = [
+    "requests>=2.31.0",
+    "urllib3>=2.0.0",
+    "websocket-client>=1.6.3",
+]
+
+[project.optional-dependencies]
+pandas = [
+    "pandas>=2.1.0",
+    "numpy>=1.25.2",
+]
+graphs = [
+    "pandas>=2.1.0",
+    "numpy>=1.25.2",
+    "matplotlib>=3.7.2",
+]
+scanner = [
+    "pandas>=2.1.0",
+    "numpy>=1.25.2",
+    "rich>=13.5.2",
+]
+all = [
+    "pandas>=2.1.0",
+    "numpy>=1.25.2",
+    "matplotlib>=3.7.2",
+    "rich>=13.5.2",
+]
+dev = [
+    "pytest>=7.4.2",
+    "responses>=0.24.0",
+    "mypy>=1.6.0",
+    "black>=23.9.1",
+    "pylint>=2.17.5",
+]
+
+[project.urls]
+Homepage = "https://eodhd.com"
+Documentation = "https://eodhd.com/financial-apis/"
+Repository = "https://github.com/EodHistoricalData/EODHD-APIs-Python-Financial-Library"
+
+[tool.setuptools.packages.find]
+include = ["eodhd*"]
+
+[tool.setuptools.package-data]
+eodhd = ["py.typed"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

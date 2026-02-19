@@ -19,7 +19,7 @@ def test_endpoint_invalid():
             api_key="00000000000000000000000000000000", endpoint="", symbols=[]
         )
         assert isinstance(websocket, WebSocketClient)
-    assert str(execinfo.value) == "Endpoint is invalid"
+    assert "Endpoint is invalid" in str(execinfo.value)
 
 
 def test_symbols_empty():

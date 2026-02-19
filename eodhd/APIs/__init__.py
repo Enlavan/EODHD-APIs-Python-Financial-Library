@@ -1,34 +1,6 @@
-#APIs/__init__.py
+#APIs/__init__.py — backward-compatibility shim
+#
+# All old class names are still importable from here but trigger
+# deprecation warnings pointing to the new locations.
 
-from .HistoricalDividendsAPI import HistoricalDividendsAPI
-from .HistoricalSplitsAPI import HistoricalSplitsAPI
-from .TechnicalIndicatorAPI import TechnicalIndicatorAPI
-from .LiveStockPricesAPI import LiveStockPricesAPI
-from .LiveExtendedQuotesAPI import LiveExtendedQuotesAPI
-from .EconomicEventsDataAPI import EconomicEventsDataAPI
-from .InsiderTransactionsAPI import InsiderTransactionsAPI
-from .FundamentalDataAPI import FundamentalDataAPI
-from .BulkEodSplitsDividendsAPI import BulkEodSplitsDividendsDataAPI
-from .UpcomingEarningsAPI import UpcomgingEarningsAPI
-from .EarningTrendsAPI import EarningTrendsAPI
-from .UpcomingIPOsAPI import UpcomingIPOsAPI
-from .UpcomingDividendsAPI import UpcomingDividendsAPI
-from .UpcomingSplitsAPI import UpcomingSplitsAPI
-from .MacroIndicatorsAPI import MacroIndicatorsAPI
-from .ListOfExchangesAPI import ListOfExchangesAPI
-from .TradingHours_StockMarketHolidays_SymbolsChangeHistoryAPI import TradingHours_StockMarketHolidays_SymbolsChangeHistoryAPI
-from .StockMarketScreenerAPI import StockMarketScreenerAPI
-from .FinancialNewsAPI import FinancialNewsAPI
-from .IntradayDataAPI import IntradayDataAPI
-from .EodHistoricalStockMarketDataAPI import EodHistoricalStockMarketDataAPI
-from .StockMarketTickDataAPI import StockMarketTickDataAPI
-from .HistoricalMarketCapitalizationAPI import HistoricalMarketCapitalizationAPI
-from .CBOEIndexFeedAPI import CBOEIndexFeedAPI
-from .IDMappingAPI import IDMappingAPI
-
-#Marketplace endpoints
-from .MPIndexComponentsAPI import MPIndexComponentsAPI
-from .MPIndicesListAPI import MPIndicesListAPI
-from .MPUSOptionsContractsAPI import  MPUSOptionsContractsAPI
-from .MPUSOptionsEODAPI import MPUSOptionsEODAPI
-from .MPUSOptionsUnderlyingSymbolsAPI import MPUSOptionsUnderlyingSymbolsAPI
+from eodhd.APIs._shim import __getattr__  # noqa: F401
